@@ -1,16 +1,11 @@
 # app_lista_tarefas
 
-A new Flutter project.
+Um app simples de lista de tarefas. Permite adicionar uma tarefa, mudar seu status e excluir.
 
-## Getting Started
+# Getting Started
 
-This project is a starting point for a Flutter application.
+1: Baixe ou clone o repositório -
 
-A few resources to get you started if this is your first Flutter project:
+2: Na raiz do projeto execute o comando "flutter pub get" 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3: Rode o projeto. Está configurado para mobile(Android).
