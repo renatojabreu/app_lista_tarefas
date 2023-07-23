@@ -13,8 +13,7 @@ class TarefasController {
     String selectedStatus = 'pendente';
     TextEditingController dateController = TextEditingController();
 
-    final GlobalKey<FormState> formKey =
-        GlobalKey<FormState>(); // Add the GlobalKey
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
     showDialog(
       context: context,
@@ -25,7 +24,7 @@ class TarefasController {
         return AlertDialog(
           title: const Text('Adicionar Tarefa'),
           content: Form(
-            key: formKey, // Set the form key
+            key: formKey,
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -100,7 +99,6 @@ class TarefasController {
             ElevatedButton(
               onPressed: () {
                 if (formKey.currentState!.validate()) {
-                  // Validate the form before adding the task
                   DateTime parsedDate =
                       DateFormat('dd/MM/yyyy').parse(dateController.text);
                   tarefas.add(
@@ -184,7 +182,7 @@ class TarefasController {
             ),
             ElevatedButton(
               onPressed: () {
-                tarefas.removeAt(index); // Remove the task at the given index
+                tarefas.removeAt(index);
                 atualizaLista(tarefas);
                 Navigator.of(context).pop();
               },
